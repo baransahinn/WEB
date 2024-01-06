@@ -62,10 +62,23 @@
 // cardBody.replaceChild(newTitle, cardBody.childNodes[1]);
 ////////////// EVENTS ///////////////////////////////
 
-const clearButoon = document.querySelector("#ö");
-clearButoon.addEventListener("click", changeTitle);
+// const clearButoon = document.querySelector("#ö");
+// clearButoon.addEventListener("click", changeTitle);
 
-function changeTitle(e) {
-  //document.querySelectorAll(".card-body")[1].children[0].textContent = "asdasd";
-  console.log(e.target);
+// function changeTitle(e) {
+//   //document.querySelectorAll(".card-body")[1].children[0].textContent = "asdasd";
+//   console.log(e.target);
+// }
+// window.addEventListener("load", run);
+
+// function run() {
+//   alert("sayffam yüklendi");
+// }
+const cardTitle = document.querySelectorAll(".card-body")[1].children[0];
+const cardBody = document.querySelectorAll(".card-body")[1];
+cardBody.addEventListener("mouseenter", run);
+//cardBody.addEventListener("mousenter", run);
+//cardTitle.addEventListener("dblclick", run);
+function run(e) {
+  console.log(e.type);
 }
