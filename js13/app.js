@@ -79,3 +79,53 @@
 // for (let name of names) {
 //   console.log(name, names.indexOf(name));
 // }
+let value;
+const map1 = new Map();
+map1.set(34, "istanbul");
+map1.set(50, "nevseihr");
+map1.set(38, "adana");
+
+// DELETE
+// value = map1.delete(34);
+// console.log(value);
+
+// HAS
+// value = map1.has(34);
+// console.log(value);
+
+// SİZE
+// console.log(map1.size);
+
+// For of ile Map üzerinde dönme
+// for (let [key, value] of map1) {
+//   console.log(key, value);
+// }
+// for (let key of map1.keys()) {
+//   console.log(key);
+// }
+
+// for (let value of map1.values()) {
+//   console.log(value);
+// }
+
+//Mapten arraye çevirmek
+// const arr = Array.from(map1);
+// console.log(arr);
+
+// Arrayı mape çevirmek
+// const array2 = [
+//   [34, "istanbul"],
+//   [50, "nevseihr"],
+//   [38, "adana"],
+// ];
+// let myMap = new Map(array2);
+// console.log(myMap);
+
+// TEMPLATE LİTERALS
+// const write = (firstName, lastName) => {
+//   // ESKİ YÖNTEM console.log("isim:  " + firstName + " " + "soyisim: " + lastName);
+
+//   // TEMPLATE LİTARİS İLE KUULANMAK ALTGR+ İKİ KEZ VİRGÜL TUŞU ``
+//   console.log(`isim ${firstName} soyisim: ${lastName}`);
+// };
+// write("baran", "şahin");
