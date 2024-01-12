@@ -67,3 +67,15 @@
 // let [a, b, ...kalanSayilar] = numbers; // a ve b ye tanımladıktan sonra gerisini kalanSayilar dizisine attı
 
 // console.log(a, b, kalanSayilar);
+/**************************************************************************** */
+// For in - For of Döngüleri
+
+// //for in indexlerini döner
+// let names = ["baran", "sahin", "furkan", "ibis"];
+// // for (let name in names) {
+// //   console.log(name,names[name]);
+// // }
+// // for of değerleri döner
+// for (let name of names) {
+//   console.log(name, names.indexOf(name));
+// }
