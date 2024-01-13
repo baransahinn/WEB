@@ -34,21 +34,45 @@
 // matematik.carp(5, 6); // static olmadıği için nesne üzerinden erişiyoruz
 // Matematik.carp(5, 6); // stat0ic olduğu için class üzerinden erişiyoruz
 
-// Miras alma
+// Miras alma super
 
+// class Person {
+//   firstName = "baran  ";
+
+//   write() {
+//     console.log("dfsdfsdf", this.firstName);
+//   }
+// }
+// // const person = new Person();
+// // person.write();
+// class Student extends Person {
+//   write() {
+//     super.write();
+//   }
+// }
+// const student1 = new Student();
+// student1.write();
+// // Super() => miras aldığı sınıfın constructorunu gösterir
 class Person {
-  firstName = "baran  ";
+  constructor(isim, soyisim, yas, maas) {
+    this.isim = isim;
+    this.soyisim = soyisim;
+    this.yas = yas;
+    this.maas = maas;
+  }
+  writeInfo() {
+    console.log(this.isim, this.soyisim, this.yas, this.maas);
+  }
+}
 
-  write() {
-    console.log("dfsdfsdf", this.firstName);
-  }
-}
-// const person = new Person();
-// person.write();
 class Student extends Person {
+  constructor(isim, soyisim, yas, maas) {
+    super(isim, soyisim, yas, maas);
+  }
   write() {
-    super.write();
+    super.writeInfo();
   }
 }
-const student1 = new Student();
-student1.write();
+
+const stutend1 = new Student("baran", "şahin", 24, 40000);
+stutend1.write();
