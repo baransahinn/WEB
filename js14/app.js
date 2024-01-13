@@ -32,4 +32,23 @@
 // }
 // const matematik = new Matematik();
 // matematik.carp(5, 6); // static olmadıği için nesne üzerinden erişiyoruz
-// Matematik.carp(5, 6); // static olduğu için class üzerinden erişiyoruz
+// Matematik.carp(5, 6); // stat0ic olduğu için class üzerinden erişiyoruz
+
+// Miras alma
+
+class Person {
+  firstName = "baran  ";
+
+  write() {
+    console.log("dfsdfsdf", this.firstName);
+  }
+}
+// const person = new Person();
+// person.write();
+class Student extends Person {
+  write() {
+    super.write();
+  }
+}
+const student1 = new Student();
+student1.write();
